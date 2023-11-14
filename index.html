@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookshelf App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1>My Bookshelf App</h1>
+    </header>
+    <main>
+        <div class="flex-row">
+            <div class="container2 bg-white shadow">
+                <h2>Tambah data buku ke Bookshelf App!</h2>
+            </div>
+            <div class="container bg-white shadow">
+                <h2>Isi data buku</h2>
+                <form class="form" action="#" id="form">
+                    <div class="form-group form-title">
+                        <label for="title">Masukkan judul buku</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div class="form-group form-title">
+                        <label for="title">Masukkan nama penulis</label>
+                        <input type="text" id="author" name="author" required>
+                    </div>
+                    <div class="form-group form-title">
+                        <label for="year">Masukkan tahun terbit</label>
+                        <input type="number" id="year" name="year" required>
+                    </div>
+                    <div class="form-group form-title checkbox">
+                        <input type="checkbox" name="finished" id="boo-read" >
+                        <label for="finished">Buku telah selesai dibaca</label>
+                    </div>
+                    <input type="submit" value="Submit" name="Submit" class="btn-submit">
+                </form>
+            </div>
+        </div>
+        <div class="flex-column container bg-white shadow ">
+            <h2 class="txt-center">Cari buku berdasarkan judul disini . . .</h2>
+            <div class="form-group form-title">
+                <label for="search">Masukkan judul buku</label>
+                <form>
+                   <input type="text" id="txt-search" name="txt-search" class="search-box" onkeyup="searchBook()">
+                </form>
+            </div>
+        </div>
+        <div class=" container shadow ">
+            <h2 class="txt-center">My Bookshelf</h2>
+        </div>
+        <div class="flex-row ">
+            <div class="flex-column container3 bg-white">
+                <div>
+                    <h3>Belum selesai dibaca</h3>
+                </div>
+                <div class="flex-column booklist" id="readingbooks"></div>    
+            </div>
+
+            <div class="flex-column container3 bg-white">
+                <div>
+                    <h3>Selesai dibaca</h3>
+                </div>
+                <div class="flex-column booklist" id="readedbooks"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p><small>Created by Muhammad Husni Fahmi Fuady 2021</small></p>
+    </footer>
+
+    <script src="js/data.js" type="text/javascript"></script>
+    <script src="js/dom.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
