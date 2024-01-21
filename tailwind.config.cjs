@@ -25,6 +25,9 @@ const config = {
 					800: '#CC4522',
 					900: '#A5371B'
 				}
+			},
+			fontFamily: {
+				inter: ['Inter', 'sans-serif']
 			}
 		}
 	}

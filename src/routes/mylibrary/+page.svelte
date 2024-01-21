@@ -1,5 +1,4 @@
 <script>
-	import { Alert } from 'flowbite-svelte';
 	import { ImagePlaceholder, Skeleton, TextPlaceholder } from 'flowbite-svelte';
 </script>
 
