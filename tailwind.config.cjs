@@ -5,7 +5,11 @@ const config = {
 		'./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'
 	],
 
-	plugins: [require('flowbite/plugin')],
+	plugins: [
+		require('flowbite/plugin')({
+			charts: true
+		})
+	],
 
 	darkMode: 'class',
 
