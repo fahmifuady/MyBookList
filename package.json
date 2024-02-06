@@ -35,6 +35,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"apexcharts": "^3.45.2"
+		"@sveltejs/adapter-static": "^3.0.1",
+		"apexcharts": "^3.45.2",
+		"firebase": "^10.7.2"
 	}
 }

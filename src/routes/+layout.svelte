@@ -12,7 +12,11 @@
 </script>
 
 <div class="fixed z-10 w-full bg-white">
-	<div class="p-4 pb-2 text-3xl font-extrabold">MyBookList</div>
+	<div class="flex items-center justify-between">
+		<div class="p-4 pb-2 text-4xl font-extrabold">MyBookList</div>
+		<!-- {#if} -->
+		<!-- <Button color="green" class="mr-5 h-3/5">Login</Button> -->
+	</div>
 	<hr />
 	<nav class="mb-1">
 		<ul class="navigation hide-scroll-bar flex flex-row gap-7 overflow-x-auto px-4">
